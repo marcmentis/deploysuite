@@ -23,7 +23,7 @@ module CommonDeployer
 
 	def clone_new_app2(args={})
 		r.run_check_pwd(args[:host_path])
-		r.run_change_gemfile_source(args[:host_path])
+		# r.run_change_gemfile_source(args[:host_path])
 		# Add [and create] sticky gemset
 		# r.run_create_sticky_gemset(args[:ruby_version], args[:host_path]) if args[:ruby_version]
 			# rvm use ruby-2.0.0@<appname> --ruby-version --create

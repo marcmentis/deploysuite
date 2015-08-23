@@ -3,7 +3,8 @@ module Deploysuite
 		include CommandlineExecuter
 
 		def bundle
-			cmd = "bundle --without development test"
+			# cmd = "bundle --without development test"
+			cmd = "bundle --local --path vendor/bundle --without development test"
 			open3method(cmd, 'out')
 		end
 

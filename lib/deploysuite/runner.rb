@@ -111,6 +111,7 @@ module Deploysuite
 		# end
 
 		def run_bundle
+			$stdout.puts Rainbow("Bundle ...").green
 			r.bundle
 			$stdout.puts Rainbow("Success: Production env 'bundle' command run for app").green
 		end

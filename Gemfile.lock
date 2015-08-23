@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    deploysuite (0.0.30)
+    deploysuite (0.0.31)
       gem-man (= 0.3.0)
       gli (= 2.12.2)
       rainbow
