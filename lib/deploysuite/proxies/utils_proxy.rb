@@ -62,7 +62,6 @@ module Deploysuite
 
 		def change_priv_if_owned(f, deployergroup)
 			if File.owned?(f)
-				if File.exists?(f)
 					cmd = "chown :#{deployergroup} #{f}"
 					open3method(cmd)
 
@@ -72,8 +71,6 @@ module Deploysuite
 					# `chown :#{deployergroup} #{f} 1> out.txt 2> err.txt`
 
 					# `chmod 775 #{f} 1> out.txt 2> err.txt`
-				end
-
 			end
 		end
 
